@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color:  white;
+    color:  white;
+    font-size: 30px;
+    line-height: 1.6;
+}
+
+.header {
+    
+    color: white;
+    padding: 20px 0;
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    margin-top: 15px;
+}
+
+.header nav ul li {
+    margin: 0 15px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.5s ease;
+}
+
+.header nav ul li a:hover {
+    color: #5d0a21;
+}
+
+ 
+.home-section {
+    background-image: url(photos/Bgym.jpg);
+    color: white;
+    text-align: center;
+    padding: 250px 20px;  
+    background-size: cover;
+    font-size: large;
+}
+
+.home-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.home-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#shopNow {
+    background-color: #333;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.5s ease;
+}
+
+#shopNow:hover {
+    background-color: #5d0a21;
+}
+
+ 
+.products-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    color: #333;
+}
+
+.products-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.product {
+    display: inline-block;
+    width: 220px;
+    margin: 20px;
+    background-color: #f5b8cc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.product img:hover {
+    opacity: 0.8;
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 15px;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+ 
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .header nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .header nav ul li {
+        margin: 10px 0;
+    }
+
+    .products-section {
+        padding: 40px 10px;
+    }
+
+    .product {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .home-section h2 {
+        font-size: 2rem;
+    }
+
+    .home-section p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .product {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .product h3 {
+        font-size: 1.2rem;
+    }
+
+    .product p {
+        font-size: 0.9rem;
+    }
+} 
+.about-section {
+    padding: 200px 20px;
+    background-image: url(photos/CONTACT.jpg);
+    background-size: cover;
+    text-align: center;
+    height: 100vh;  
+}
+
+.contact-section {
+    padding: 180px 20px;
+   background-color: #f5b8cc;
+    text-align: center;
+    height: 80vh;  
+    font: size 200px;;
+     
+}
+
+span {
+    font-weight: bold;
+    color: #5d0a21;
+}
+
+nav ul li a.active {
+    color: #5d0a21;
+    font-weight: bold;
+    border-bottom: 2px solid #5d0a21;
+}
